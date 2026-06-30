@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Varad Jadhav — DevOps Engineer. Kubernetes, Docker, GitLab CI/CD, Ansible, Jenkins. Fresher from Sangli, Maharashtra." />
+  <meta name="keywords"
+    content="Varad Jadhav, DevOps Engineer, Kubernetes, Docker, GitLab CI/CD, Jenkins, Ansible, Terraform, AWS" />
+  <meta name="author" content="Varad Jadhav" />
+  <meta property="og:title" content="Varad Jadhav — DevOps Engineer" />
+  <meta property="og:description" content="DevOps Engineer specializing in Kubernetes, CI/CD, and cloud automation." />
+  <meta property="og:type" content="website" />
+  <title>Varad Jadhav — DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- PARTICLES CANVAS -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>varad@devops<span class="logo-tilde">~</span><span
+          class="logo-bracket">]</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Experience</a>
+        <a href="#expertise" class="nav-link">Expertise</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/resume.pdf" download class="nav-cta">Resume</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Varad<br /><span class="name-accent">Jadhav</span></h1>
+        <div class="hero-typed-wrapper">
+          <span class="typed-prefix">&gt; </span>
+          <span id="typed-text"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-bio">B.Tech Computer Engineering graduate building production-grade infrastructure — Kubernetes
+          clusters, automated CI/CD pipelines, and Linux server automation using Ansible.</p>
+        <div class="hero-stack-row">
+          <span class="stack-tag">Docker</span>
+          <span class="stack-tag">Kubernetes</span>
+          <span class="stack-tag">GitLab CI/CD</span>
+          <span class="stack-tag">Jenkins</span>
+          <span class="stack-tag">Ansible</span>
+          <span class="stack-tag">AWS</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://github.com/Varad-ctrl" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/varad-jadhav-devops" target="_blank" rel="noopener"
+            class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="profile-ring">
+          <div class="profile-img-wrap">
+            <!-- Replace src with your photo: assets/profile.jpg -->
+            <img src="assets/profile.jpg" alt="Varad Jadhav" class="profile-img" id="profile-photo"
+              onerror="this.style.display='none'; document.getElementById('profile-initials').style.display='flex'" />
+            <div class="profile-initials" id="profile-initials">VJ</div>
+          </div>
+          <div class="ring-badge ring-badge-k8s" title="Kubernetes">&#x2638;</div>
+          <div class="ring-badge ring-badge-docker" title="Docker">&#x1F433;</div>
+          <div class="ring-badge ring-badge-linux" title="Linux">&#x1F427;</div>
+        </div>
+        <div class="hero-terminal glass-card">
+          <div class="terminal-bar">
+            <span class="tbar-dot" style="background:#ff5f57"></span>
+            <span class="tbar-dot" style="background:#febc2e"></span>
+            <span class="tbar-dot" style="background:#28c840"></span>
+            <span class="tbar-title">terminal</span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <div class="tline"><span class="tprompt">$</span> kubectl get nodes</div>
+            <div class="tline tout">NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STATUS &nbsp; ROLES
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AGE</div>
+            <div class="tline tout">master &nbsp;&nbsp;&nbsp;&nbsp; Ready &nbsp;&nbsp; control-plane &nbsp; 5d</div>
+            <div class="tline tout">worker-01 &nbsp; Ready &nbsp;&nbsp; &lt;none&gt;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5d</div>
+            <div class="tline tout">worker-02 &nbsp; Ready &nbsp;&nbsp; &lt;none&gt;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5d</div>
+            <div class="tline"><span class="tprompt">$</span> kubectl get pods -n finance-tracker</div>
+            <div class="tline tout">frontend &nbsp;&nbsp; 1/1 &nbsp; Running &nbsp; 2d</div>
+            <div class="tline tout">backend &nbsp;&nbsp;&nbsp; 1/1 &nbsp; Running &nbsp; 2d</div>
+            <div class="tline tout">mysql-0 &nbsp;&nbsp;&nbsp; 1/1 &nbsp; Running &nbsp; 2d</div>
+            <div class="tline"><span class="tprompt">$</span> <span class="tcursor">&#9646;</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-arrow"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// about_me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>DevOps Engineer</strong> and recent B.Tech Computer Engineering graduate who loves turning
+            complex deployment problems into clean, automated solutions.</p>
+          <p>My focus is on the full infrastructure lifecycle — from writing Dockerfiles and Kubernetes manifests to
+            building GitLab CI/CD pipelines and automating RHEL server health checks with Ansible.</p>
+          <p>I don't just follow tutorials. I debug real failures — MySQL connection refused errors, PersistentVolume
+            binding issues, Kubernetes DNS resolution problems, and Ansible fact name mismatches in production
+            playbooks.</p>
+          <p>Based in <strong>Sangli, Maharashtra</strong>. Open to remote and on-site DevOps roles.</p>
+          <div class="about-links">
+            <a href="https://github.com/Varad-ctrl" target="_blank" class="about-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+              github.com/Varad-ctrl
+            </a>
+            <a href="https://www.linkedin.com/in/varad-jadhav-ba1355255" target="_blank" class="about-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              linkedin.com/in/varad-jadhav-devops
+            </a>
+          </div>
+        </div>
+        <div class="about-stats-col reveal">
+          <div class="stats-grid">
+            <div class="stat-card glass-card">
+              <div class="stat-num" data-count="5">0</div>
+              <div class="stat-label">Projects Shipped</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-num" data-count="3">0</div>
+              <div class="stat-label">K8s Deployments</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-num" data-count="2">0</div>
+              <div class="stat-label">CI/CD Pipelines</div>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-num">&#8734;</div>
+              <div class="stat-label">kubectl commands</div>
+            </div>
+          </div>
+          <div class="tools-card glass-card reveal">
+            <div class="tools-title">Daily toolkit</div>
+            <div class="tools-row">
+              <span class="tool-chip">kubectl</span>
+              <span class="tool-chip">docker build</span>
+              <span class="tool-chip">ansible-playbook</span>
+              <span class="tool-chip">gitlab-ci.yml</span>
+              <span class="tool-chip">Jenkinsfile</span>
+              <span class="tool-chip">terraform apply</span>
+              <span class="tool-chip">vim</span>
+              <span class="tool-chip">bash</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// tech_stack</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-bars reveal">
+          <h3 class="skills-group-title">Core Proficiency</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Docker</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Kubernetes</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>GitLab CI/CD</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Jenkins</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Ansible</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="78"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Linux (RHEL/Ubuntu)</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-categories reveal">
+          <div class="skill-cat-card glass-card">
+            <div class="skill-cat-icon">&#x1F4E6;</div>
+            <h4>Containers</h4>
+            <div class="skill-tags">
+              <span class="stag stag-blue">Docker</span>
+              <span class="stag stag-blue">Kubernetes</span>
+              <span class="stag stag-blue">Docker Compose</span>
+              <span class="stag stag-blue">Helm</span>
+              <span class="stag stag-blue">Kind</span>
+            </div>
+          </div>
+          <div class="skill-cat-card glass-card">
+            <div class="skill-cat-icon">&#x1F504;</div>
+            <h4>CI/CD</h4>
+            <div class="skill-tags">
+              <span class="stag stag-green">GitLab CI/CD</span>
+              <span class="stag stag-green">Jenkins</span>
+              <span class="stag stag-green">GitHub Actions</span>
+              <span class="stag stag-green">Shared Libraries</span>
+              <span class="stag stag-green">Groovy</span>
+            </div>
+          </div>
+          <div class="skill-cat-card glass-card">
+            <div class="skill-cat-icon">&#x2699;&#xFE0F;</div>
+            <h4>IaC &amp; Config</h4>
+            <div class="skill-tags">
+              <span class="stag stag-purple">Ansible</span>
+              <span class="stag stag-purple">Terraform</span>
+              <span class="stag stag-purple">YAML</span>
+              <span class="stag stag-purple">Bash</span>
+            </div>
+          </div>
+          <div class="skill-cat-card glass-card">
+            <div class="skill-cat-icon">&#x2601;&#xFE0F;</div>
+            <h4>Cloud &amp; OS</h4>
+            <div class="skill-tags">
+              <span class="stag stag-cyan">AWS</span>
+              <span class="stag stag-cyan">Azure</span>
+              <span class="stag stag-cyan">RHEL</span>
+              <span class="stag stag-cyan">Ubuntu</span>
+              <span class="stag stag-cyan">Firewalld</span>
+            </div>
+          </div>
+          <div class="skill-cat-card glass-card">
+            <div class="skill-cat-icon">&#x1F4BB;</div>
+            <h4>Dev</h4>
+            <div class="skill-tags">
+              <span class="stag stag-orange">Python</span>
+              <span class="stag stag-orange">Node.js</span>
+              <span class="stag stag-orange">React</span>
+              <span class="stag stag-orange">MySQL</span>
+              <span class="stag stag-orange">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// projects</span>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-sub">Five end-to-end DevOps projects — real tools, real debugging, real infrastructure.</p>
+      </div>
+
+      <!-- PROJECT 1 — FEATURED -->
+      <div class="project-featured glass-card reveal">
+        <div class="project-featured-badge">Featured Project</div>
+        <div class="project-featured-grid">
+          <div class="project-featured-info">
+            <div class="project-num">01</div>
+            <h3 class="project-title">Finance Tracker — Kubernetes + GitLab CI/CD</h3>
+            <p class="project-desc">A production-style three-tier application. React frontend, Node.js backend, MySQL
+              database — fully containerized and deployed on Kubernetes with an end-to-end GitLab CI/CD pipeline. Every
+              git push triggers a build, Docker Hub push, and zero-downtime rolling deployment.</p>
+            <div class="project-highlights">
+              <div class="ph-item"><span class="ph-check">&#10003;</span> GitLab CI/CD multi-stage pipeline (build →
+                push → deploy)</div>
+              <div class="ph-item"><span class="ph-check">&#10003;</span> Kubernetes: Deployments, Services, ConfigMaps,
+                Secrets</div>
+              <div class="ph-item"><span class="ph-check">&#10003;</span> PersistentVolume + PVC for stateful MySQL
+                storage</div>
+              <div class="ph-item"><span class="ph-check">&#10003;</span> Zero-downtime rolling updates via kubectl
+                rollout</div>
+              <div class="ph-item"><span class="ph-check">&#10003;</span> Debugged PV binding, DNS resolution, service
+                selector mismatch</div>
+            </div>
+            <div class="project-tags">
+              <span class="ptag">GitLab CI/CD</span>
+              <span class="ptag">Docker</span>
+              <span class="ptag">Kubernetes</span>
+              <span class="ptag">React</span>
+              <span class="ptag">Node.js</span>
+              <span class="ptag">MySQL</span>
+              <span class="ptag">YAML</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://gitlab.com/varadjadhav3663/fintrack-app" target="_blank"
+                class="btn btn-primary btn-sm">View on GitLab</a>
+            </div>
+          </div>
+          <div class="project-featured-arch">
+            <div class="arch-label">// pipeline_architecture</div>
+            <div class="arch-diagram">
+              <div class="arch-row">
+                <div class="arch-box arch-dev">Developer<br /><span>git push</span></div>
+                <div class="arch-arrow-right"></div>
+                <div class="arch-box arch-gitlab">GitLab<br /><span>CI/CD</span></div>
+              </div>
+              <div class="arch-col-arrow"></div>
+              <div class="arch-row arch-row-three">
+                <div class="arch-box arch-docker">Docker Hub<br /><span>Images</span></div>
+                <div class="arch-arrow-right"></div>
+                <div class="arch-box arch-k8s">Kubernetes<br /><span>Cluster</span></div>
+              </div>
+              <div class="arch-col-arrow"></div>
+              <div class="arch-pods">
+                <div class="arch-pod">Frontend</div>
+                <div class="arch-pod">Backend</div>
+                <div class="arch-pod arch-pod-db">MySQL + PV</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS GRID -->
+      <div class="projects-grid">
+
+        <!-- PROJECT 2 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-card-top">
+            <div class="project-num">02</div>
+            <div class="project-card-icon">&#x2638;&#xFE0F;</div>
+          </div>
+          <h3 class="project-title">Kubernetes Two-Tier Notes App</h3>
+          <p class="project-desc">Node.js application with MySQL backend deployed on a multi-node Kind cluster. Deep
+            work with service discovery, persistent storage, and resolving DNS resolution failures between pods.</p>
+          <div class="project-highlights">
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Multi-node Kind cluster configuration</div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> PV + PVC for stateful MySQL data</div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Fixed MySQL connection refused and PV pending
+              state</div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Metrics Server installation and troubleshooting
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="ptag">Kubernetes</span>
+            <span class="ptag">Docker</span>
+            <span class="ptag">Node.js</span>
+            <span class="ptag">MySQL</span>
+            <span class="ptag">Kind</span>
+          </div>
+          <a href="https://github.com/Varad-ctrl/notes-app-dockerize.git" target="_blank"
+            class="btn btn-ghost btn-sm project-btn">GitHub
+            &rarr;</a>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-card-top">
+            <div class="project-num">03</div>
+            <div class="project-card-icon">&#x1F527;</div>
+          </div>
+          <h3 class="project-title">Jenkins Shared Library for CI/CD</h3>
+          <p class="project-desc">Built a reusable Groovy-based Jenkins Shared Library eliminating duplicate pipeline
+            code across multiple projects. One set of functions drives the entire delivery lifecycle.</p>
+          <div class="project-highlights">
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Groovy functions: DockerBuild, DockerPush,
+              Deploy, Notify</div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Eliminated copy-paste Jenkinsfile boilerplate
+            </div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Standardized pipeline structure across all repos
+            </div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Pipeline as Code approach</div>
+          </div>
+          <div class="project-tags">
+            <span class="ptag">Jenkins</span>
+            <span class="ptag">Groovy</span>
+            <span class="ptag">Docker</span>
+            <span class="ptag">GitHub</span>
+          </div>
+          <a href="https://github.com/Varad-ctrl/jenkins-shared-library.git" target="_blank"
+            class="btn btn-ghost btn-sm project-btn">GitHub
+            &rarr;</a>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-card-top">
+            <div class="project-num">04</div>
+            <div class="project-card-icon">&#x1F6E1;&#xFE0F;</div>
+          </div>
+          <h3 class="project-title">Firewall Automation — Ansible</h3>
+          <p class="project-desc">Automated Linux firewall configuration across multiple RHEL servers. Opens required
+            ports, restarts firewalld, and verifies rules idempotently across a fleet of nodes via SSH.</p>
+          <div class="project-highlights">
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Ports 80, 443, 8080, 3306 automated across all
+              nodes</div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> SSH auth + privilege escalation configured</div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Idempotent — safe to re-run with no side effects
+            </div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> RHEL firewalld rules verified post-apply</div>
+          </div>
+          <div class="project-tags">
+            <span class="ptag">Ansible</span>
+            <span class="ptag">RHEL</span>
+            <span class="ptag">Firewalld</span>
+            <span class="ptag">SSH</span>
+            <span class="ptag">YAML</span>
+          </div>
+          <a href="https://github.com/Varad-ctrl/ansible-firewall-automation.git" target="_blank"
+            class="btn btn-ghost btn-sm project-btn">GitHub
+            &rarr;</a>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-card-top">
+            <div class="project-num">05</div>
+            <div class="project-card-icon">&#x1F4CA;</div>
+          </div>
+          <h3 class="project-title">Production Linux Health Check — Ansible</h3>
+          <p class="project-desc">Automated health monitoring across multiple Linux servers — CPU load, memory, disk
+            usage, running services, and OS validation. Fixed a real production bug: corrected
+            <code>ansible_proc_loadavg</code> to <code>ansible_loadavg</code> after reading Ansible facts documentation.
+          </p>
+          <div class="project-highlights">
+            <div class="ph-item"><span class="ph-check">&#10003;</span> CPU, memory, disk, services all checked</div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Debugged ansible_loadavg fact name in production
+            </div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Generates consolidated health report per run
+            </div>
+            <div class="ph-item"><span class="ph-check">&#10003;</span> Validates OS and network on each server</div>
+          </div>
+          <div class="project-tags">
+            <span class="ptag">Ansible</span>
+            <span class="ptag">Linux</span>
+            <span class="ptag">Monitoring</span>
+            <span class="ptag">YAML</span>
+            <span class="ptag">RHEL</span>
+          </div>
+          <a href="https://github.com/Varad-ctrl/System_health_check.git" target="_blank"
+            class="btn btn-ghost btn-sm project-btn">GitHub
+            &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & EXPERIENCE -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">// education & experience</span>
+        <h2 class="section-title">Education & Experience</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- EDUCATION -->
+        <div class="timeline-item reveal">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-card glass-card">
+
+            <div class="timeline-badge timeline-badge-edu">
+              Education
+            </div>
+
+            <h3>Bachelor of Technology (B.Tech) – Computer Engineering</h3>
+
+            <p class="timeline-org">
+              Rajarambapu Institute of Technology (RIT),
+              Rajaramnagar, Sakharale
+            </p>
+
+            <p class="timeline-period">
+              July 2022 – June 2026 | CGPA: 8.23/10
+            </p>
+
+            <p class="timeline-desc">
+              Studied Computer Engineering with a strong focus on
+              Linux, Cloud Computing, Operating Systems,
+              Computer Networks, DevOps, and Infrastructure
+              Automation. Applied classroom knowledge by building
+              production-style DevOps projects involving Docker,
+              Kubernetes, GitLab CI/CD, Jenkins, Ansible,
+              Terraform, AWS, and Azure.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- INTERNSHIP -->
+
+        <div class="timeline-item reveal">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-card glass-card">
+
+            <div class="timeline-badge timeline-badge-intern">
+              Internship
+            </div>
+
+            <h3>DevOps Engineer Intern</h3>
+
+            <p class="timeline-org">
+              Aspiroar Association
+            </p>
+
+            <p class="timeline-period">
+              January 2026 – June 2026
+            </p>
+
+            <p class="timeline-desc">
+              Working on CI/CD automation, containerization,
+              Kubernetes deployments, Infrastructure as Code,
+              Linux administration, and cloud technologies.
+              Developed production-style DevOps solutions using
+              GitLab CI/CD, Jenkins, Docker, Kubernetes,
+              Ansible, Terraform, AWS, and Azure while deploying
+              and managing multi-tier applications.
+            </p>
+
+            <div class="timeline-skills">
+
+              <span class="tskill">Linux</span>
+
+              <span class="tskill">Docker</span>
+
+              <span class="tskill">Kubernetes</span>
+
+              <span class="tskill">GitLab CI/CD</span>
+
+              <span class="tskill">Jenkins</span>
+
+              <span class="tskill">Ansible</span>
+
+              <span class="tskill">Terraform</span>
+
+              <span class="tskill">AWS</span>
+
+              <span class="tskill">Azure</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CORE EXPERTISE -->
+
+  <section id="expertise" class="section">
+
+    <div class="container">
+
+      <div class="section-header reveal">
+
+        <span class="section-label">// core expertise</span>
+
+        <h2 class="section-title">Technical Expertise</h2>
+
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon">🐳</div>
+          <h4>Containerization</h4>
+          <p class="cert-issuer">Docker • Docker Compose</p>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon">☸️</div>
+          <h4>Container Orchestration</h4>
+          <p class="cert-issuer">Kubernetes</p>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon">⚙️</div>
+          <h4>CI/CD Automation</h4>
+          <p class="cert-issuer">GitLab CI/CD • Jenkins</p>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon">🖥️</div>
+          <h4>Linux Administration</h4>
+          <p class="cert-issuer">Ubuntu • RHEL • Bash</p>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon">📦</div>
+          <h4>Infrastructure as Code</h4>
+          <p class="cert-issuer">Terraform • Ansible</p>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon">☁️</div>
+          <h4>Cloud Platforms</h4>
+          <p class="cert-issuer">AWS • Microsoft Azure</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// contact</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-sub">Open to DevOps Engineer roles, internships, and freelance infrastructure work. Let's
+          connect.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <a href="mailto:varadjadhav3663@email.com" class="contact-card glass-card">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </div>
+            <div>
+              <div class="contact-card-label">Email</div>
+              <div class="contact-card-val">varadjadhav3663@email.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/varad-jadhav-devops" target="_blank" class="contact-card glass-card">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div>
+              <div class="contact-card-label">LinkedIn</div>
+              <div class="contact-card-val">varad-jadhav-devops</div>
+            </div>
+          </a>
+          <a href="https://github.com/Varad-ctrl" target="_blank" class="contact-card glass-card">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </div>
+            <div>
+              <div class="contact-card-label">GitHub</div>
+              <div class="contact-card-val">github.com/Varad-ctrl</div>
+            </div>
+          </a>
+          <div class="contact-card glass-card" style="cursor:default;">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="contact-card-label">Location</div>
+            <div class="contact-card-val">
+              Sangli, Maharashtra, India • Open to Full-time • Remote • Hybrid • Relocation
+            </div>
+          </div>
+          <a href="assets/resume.pdf" download class="btn btn-primary contact-resume-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download Resume
+          </a>
+        </div>
+        <form class="contact-form glass-card reveal" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <h3 class="form-title">Send a message</h3>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="DevOps opportunity / collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about the role or project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          <div id="form-msg" class="form-msg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">varad<span>@devops</span>:~$</div>
+      <p class="footer-copy">Designed &amp; built by <strong>Varad Jadhav</strong> &mdash; &copy; 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/Varad-ctrl" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/varad-jadhav-devops" target="_blank">LinkedIn</a>
+        <a href="assets/resume.pdf" download>Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

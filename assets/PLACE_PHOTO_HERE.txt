@@ -1,0 +1,5 @@
+Save your professional photo here as: profile.jpg
+Save your resume PDF here as: resume.pdf
+
+Until you add these, the site will show a "VJ" initials avatar
+and the download buttons will 404 — everything else works fine.
